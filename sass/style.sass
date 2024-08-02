@@ -1,0 +1,415 @@
+@import "normalize1.scss"
+@import "resets.scss"
+
+* 
+    box-sizing: border-box
+
+$color-blue: #5290EA
+$color-yellow: #F2C264
+
+.container
+    position: relative
+    max-width: 1140px
+    margin: 0 auto //размещаем по центру контейнера логотип
+    
+
+.main-section
+    position: relative
+    min-height: 800px
+    background: #F0F0F0
+    padding-top: 16px // выравнивниваю лого на 16 пх от верха сайта
+    overflow: hidden //обризает все то что заходит за границы
+
+    &__nav-container    // обращаюсь к контейнеру для того что бы выровнять список относильно контейнера и задать растояние между лого и списком 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px // выровняем список на 69пх относительно лого
+        align-items: center
+    &__logo
+        width: 134px
+    &__content_container
+        position: relative
+        display: flex
+        flex-direction: row
+    &_first-elipse
+        position: absolute
+        top: 129px
+        right: 80px
+    &_second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
+    
+        
+
+
+
+
+.nav_menu // обращаюсь к блоку nav со списком
+    &__list
+        display: flex  // выравниваю список в рядочок
+        flex-direction: row
+
+.nav-menu__list-item
+    margin-right: 64px
+    font-size: 18px
+    &:last-child
+        margin-right: 0px
+
+.left_wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectengle__blue
+        position: absolute
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px // закругляем наш прямоугольник на 100 пх
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) // тень прямоугольника 
+        transform: rotate(-64deg)
+        z-index: 2
+    &__rectengle__yellow
+        position: absolute
+        top: 160px
+        left: -30px
+        width: 618.43px
+        height: 220px
+        background: $color-yellow
+        border-radius: 100px // закругляем наш прямоугольник на 100 пх
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) // тень прямоугольника 
+        transform: rotate(-50.81deg)
+        z-index: 3
+    &__rectengle__grey
+        position: absolute
+        top: 190px
+        left: 10px
+        width: 608.97px
+        height: 220px
+        background: #E2E2E2
+        border-radius: 100px // закругляем наш прямоугольник на 100 пх
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) // тень прямоугольника 
+        transform: rotate(-36.15deg)
+        z-index: 1
+.right_wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    right: 76px
+    z-index: 5
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &_titel
+        margin-bottom: 5px //отступ от заголовка до текса
+    &_text
+        font-size: 16px
+        margin-bottom: 20px // отступ кнопок от текста 
+   
+    
+        
+
+
+.icons 
+  display: flex /* Размещаем элементы в ряд */
+
+.icons img 
+  width: 40px
+  height: 40px
+  margin-right: 17px /* Отступ между изображениями */
+  &:last-child
+    margin-right: 0
+    
+    // &__item
+    //     width: 80px
+    //     height: 80px
+    //     border: 1px solid $color-blue
+    //     border-radius: 100px
+.title
+    font-size: 76px
+    position: relative
+    &_hr
+        width: 65px
+        position: absolute
+        bottom: 0px
+        margin: 0
+        border: none
+        border-top: 1px solid black
+
+
+  
+
+.icons_chat
+    width: 46px
+    height: 46px
+
+.buttons
+    display: inline-flex //выравниваю кнопки в рядочок
+    &_main-btn
+        margin-right: 32px
+        //задаю параметры кнопки 
+        width: 200px
+        height: 60px
+        background: $color-yellow
+        box-shadow: 0px 4px 4px rgba(0,0,0, 0.25)
+        border-radius: 100px
+        border: none // убираю рамку кнопки
+        font-size: 18px // параметри текста 
+        color: black
+
+
+    &__icon_btn
+        display: inline-flex //выравниваю текст (Є питання ) в рядочок с иконкой чата 
+        align-items: center // выравниваю по центру иконку+текст
+        img
+            //задаю растояние текста от иконки чата
+            margin-right: 12px 
+    
+    .button_text
+        font-size: 16px
+        
+.elipse
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(242, 194, 100, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 50.29%, rgba(242, 194, 100, 0.5) 85.74%);
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_dig
+        width: 282px
+        height: 282px
+    &_suptract
+        width: 129.33px
+        height: 129.33px
+        background: #F0F0F0
+        border-radius: 150px
+        &_big
+            width: 188px
+            height: 188px
+
+// .main-section_lesons
+//     margin-top: 32px
+
+// .lesons
+//     &_tittel
+//         font-size: 72px
+//         margin-bottom: 32px
+    
+//     &_guitar_container
+//         display: flex
+//         flex-direction: row
+    
+
+//     &_guitar_one
+        
+//         max-width: 360px
+//         max-height: 360px 
+//         border-radius: 10px
+//         background: #E2E2E2
+//         display: flex
+//         //flex-direction: row
+//         align-items: flex-end
+//         margin-right: 30px
+//         img
+//             height: 335px
+//         &_text
+//             width: 280px
+//            // max-height: 88px
+//             writing-mode: vertical-rl
+//             font-size: 36px
+//             color: #000
+//             text-align: center
+//     &_guitar_second
+//         display: flex
+//         flex-direction: row
+//         max-width: 360px
+//         max-height: 360px 
+//         border-radius: 10px
+//         background: $color-yellow
+//         margin-right: 30px
+        
+//         &_text
+//             width: 161px
+//             height: 88px
+//             writing-mode: vertical-rl
+//             font-size: 36px
+//             color: #000
+//     &_guitar_third
+//         display: flex
+//         flex-direction: row
+//         max-width: 360px
+//         max-height: 360px 
+//         border-radius: 10px
+//         background: $color-blue
+        
+//         &_text
+//             width: 161px
+//             height: 88px
+//             writing-mode: vertical-rl
+//             font-size: 36px
+//             color: #000
+
+
+.second_section
+    min-height: 700px
+   
+    &__container
+        padding-top: 32px
+        position: relative
+       
+    &_titel
+        margin-bottom: 40px
+    &__cards_boxs
+        display: inline-flex
+        margin-bottom: 25px
+        
+    &__cards-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__icons_boxs
+        display: flex
+        justify-content: center
+       // margin-bottom: 56px
+    &__icons-item
+        margin-right: 60px
+        &:last-child
+            margin-right: 0
+    &_first-elipse
+        position: absolute
+        top: 80px
+        right: -60px
+        z-index: -1
+    &_second-elipse
+        position: absolute
+        top: 364px
+        left: -60px
+        z-index: -1
+
+.third_section
+    margin-top: 20px
+    position: relative
+    min-height: 640px
+    background: #F0F0F0
+    overflow: hidden
+    z-index: 0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-left: 167px
+        padding-top: 46px
+    
+
+    &__right_section
+        max-width: 479px
+  
+        p
+            font-size: 18px
+            margin-bottom: 30px
+    &_first-elipse
+        position: absolute
+        top: 140px
+        left: 110px
+        z-index: -1
+    &_figure
+        position: absolute
+        top: 249px
+        left: 15px
+        z-index: -1
+    &_second-elipse
+        position: absolute
+        
+        right: -120px
+        top: -120px
+
+
+.third_section_right-titel
+    margin-bottom: 20px
+
+
+
+      
+            
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px 
+    border-radius: 10px
+    display: inline-flex
+    align-items: flex-end
+    //flex-direction: row
+    &_img
+        height: 335px
+    &_text
+        width: 280px
+        font-size: 36px 
+        text-align: center
+        transform: rotate(90deg)
+        position: absolute
+        top: 144px
+        right: -45px
+
+.cards-item_yellow
+    background: $color-yellow
+    
+
+.cards-item_blue
+    background: $color-blue
+   
+    
+.icons-item
+    display: inline-flex
+    &_img
+        margin-right: 20px
+        width: 80px
+    &__text
+        font-size: 18px
+        align-items: flex-end
+    
+
+.text_big
+    font-size: 48px
+
+.elipse_suptract_white
+    width: 129.33px
+    height: 129.33px
+    background: white
+    border-radius: 150px
+
+// .footer_section   
+
+
+.footer
+    &_img
+        position: absolute
+        left: -250px
+        bottom: 0px
+
+
+       
+
+
+
+    
+
+
+  
+
+
+
+
+
+ 
+            
+   
+
+
+
